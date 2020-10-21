@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/manhinh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/nentop" />
+
+        <EditText
+            android:id="@+id/edt_baihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên bài hát..."
+            android:textSize="25dp">
+        </EditText>
+        <EditText
+            android:id="@+id/edt_nghesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên ca sĩ..."
+            android:textSize="25dp">
+        </EditText>
+        <Button
+            android:id="@+id/bt_capnhat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật"
+            android:layout_marginLeft="300dp">
+        </Button>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_baseline_library_music_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Nhạc trẻ"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
